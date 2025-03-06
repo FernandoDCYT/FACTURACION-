@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Factura</title>
+    <!-- Enlace al archivo CSS externo -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <div id="contenedor">
+        <div class="container">
+            <div class="titulo">Bienvenida Armario</div>
+            <textarea class="texto" id="texto1" rows="4" cols="50">¡Hola! 
+
+Tenemos una gran variedad de Armarios de 2, 3 y 4 cuerpos y Zapateros, además de ofertas en combos con excelente calidad y precios competitivos. 🏷️
+
+🚚 Envíos rápidos el mismo día a Bogotá y Soacha.
+💰 Pago contra entrega: Aceptamos Nequi, Daviplata y Efectivo.
+✅ Factura y 3 meses de garantía incluida para mayor confianza.
+
+¿Te gustaría ver más fotos con nuestros precios? 📸</textarea>
+            <button onclick="copiarTexto('texto1')">Copiar</button>
+        </div>
+        <div class="container">
+            <div class="titulo">Bienvenida Escurridores</div>
+            <textarea class="texto" id="texto2" rows="4" cols="50">¡Hola! 😊
+
+Tenemos una gran variedad de escurridores de platos de alta calidad e inoxidable, perfectos para mantener tu cocina organizada y limpia. 🍽️✨
+
+🚚 Envíos rápidos el mismo día a Bogotá y Soacha.
+💰 Pago contra entrega: Aceptamos Nequi, Daviplata y Efectivo.
+✅ Factura y 3 meses de garantía incluida para tu tranquilidad.
+
+¿Te gustaría ver más fotos con nuestros precios? 📸</textarea>
+            <button onclick="copiarTexto('texto2')">Copiar</button>
+        </div>
+        <div class="container">
+            <div class="titulo">Bienvenida General</div>
+            <textarea class="texto" id="texto3" rows="4" cols="50">¡Hola! 😊
+
+Contamos con artículos para el hogar, entre otros productos de alta calidad, perfectos para mantener tu espacio organizado y funcional. 🍽️✨
+
+🚚 Envíos rápidos el mismo día a Bogotá y Soacha.
+💰 Pago contra entrega: Aceptamos Nequi, Daviplata y Efectivo.
+✅ Factura y 3 meses de garantía incluida para tu tranquilidad.
+
+¿Te gustaría ver más fotos con nuestros precios? 📸
+¿En qué ubicación te encuentras? ¡Estamos para ayudarte! 😊</textarea>
+            <button onclick="copiarTexto('texto3')">Copiar</button>
+        </div>
+        <div class="container">
+            <div class="titulo">Despues de enviar imagenes (Armario)</div>
+            <textarea class="texto" id="texto5" rows="4" cols="50">
+Nuestros armarios cuentan con tela antifluido, lo que los hace más resistentes y fáciles de limpiar. Los tubos son metálicos y soportan hasta 50 kilos, garantizando durabilidad. 💪 También tenemos la opción de combos con zapatero para una mayor funcionalidad 🏠✨, pero igualmente los vendemos por separado. </textarea>
+            <button onclick="copiarTexto('texto5')">Copiar</button>
+        </div>
+        <div class="container">
+            <div class="titulo">Despues de enviar imagenes (Escurridores)</div>
+            <textarea class="texto" id="texto6" rows="4" cols="50">
+Nuestros escurridores están hechos de materiales de alta calidad e inoxidable, garantizando resistencia y larga duración. 🍽️💪 Son perfectos para mantener tu cocina organizada y libre de agua. 💧 Además, tenemos combos de escurridores con utensilios para hacer tu cocina aún más funcional, pero también los vendemos por separado. 🏠✨</textarea>
+            <button onclick="copiarTexto('texto6')">Copiar</button>
+        </div>
+        <div class="container">
+            <div class="titulo">Despues de enviar imagenes (General)</div>
+            <textarea class="texto" id="texto7" rows="4" cols="50"> 
+Tenemos una gran variedad de productos de alta calidad para tu hogar, entre ellos armarios, escurridores, zapateros y más. 🏠✨ Todos nuestros artículos están hechos para ofrecerte durabilidad y funcionalidad. 💪 Además, ofrecemos combos con otros productos, pero también puedes comprar cada uno por separado. 📦🍽️ ¡Tu comodidad es nuestra prioridad!</textarea>
+            <button onclick="copiarTexto('texto7')">Copiar</button>
+        </div>
+        <div class="container">
+            <div class="titulo">Datos del Cliente</div>
+            <textarea class="texto" id="texto8" rows="4" cols="50">
+Regaleme sus datos de la siguiente manera para agendarte:
+✅ Nombre
+✅ Direccion completa
+✅ Barrio
+✅ Celular</textarea>
+            <button onclick="copiarTexto('texto8')">Copiar</button>
+        </div>
+        <div class="container">
+            <div class="titulo">Texto 9 a copiar</div>
+            <textarea class="texto" id="texto9" rows="4" cols="50">Texto de ejemplo 9</textarea>
+            <button onclick="copiarTexto('texto9')">Copiar</button>
+        </div>
+        <div class="container">
+            <div class="titulo">Texto 10 a copiar</div>
+            <textarea class="texto" id="texto10" rows="4" cols="50">Texto de ejemplo 10</textarea>
+            <button onclick="copiarTexto('texto10')">Copiar</button>
+        </div>
+    
+    </div>
+</div>
+<div class="div-principal">
+    <!-- Datos del Cliente Moved Section -->
+    <div class="container">
+        <div class="titulo">Datos del Cliente</div>
+        <textarea class="texto" id="datosCliente" rows="6" placeholder="Datos del Cliente"></textarea>
+    </div>
+     <!-- Nuevo campo para el link del chat del vendedor -->
+        <div class="container">
+            <div class="titulo">Link del Chat del Vendedor</div>
+            <input type="text" id="linkChatVendedor" class="producto" placeholder="Ingresa el link del chat" />
+        </div>
+
+        <!-- Nuevo campo para el nombre de la cuenta -->
+        <div class="container">
+            <div class="titulo">Nombre de la Cuenta</div>
+            <input type="text" id="nombreCuenta" class="producto" placeholder="Ingresa el nombre de la cuenta" />
+        </div>
+    <!-- Nuevas Secciones de Cálculo de Total -->
+    <div class="container">
+        <div class="titulo">Agregar Producto</div>
+        <input type="text" id="nombreProducto" class="producto" placeholder="Nombre del Producto" />
+        <input type="number" id="precioProducto" class="precio" placeholder="Precio del Producto" />
+        <button onclick="agregarProducto()">Agregar Producto</button>
+    </div>
+
+    <div class="container">
+        <div class="titulo">Lista de Productos</div>
+        <ul id="listaProductos">
+            <!-- Aquí se mostrarán los productos agregados -->
+        </ul>
+    </div>
+
+    <div class="container">
+        <button onclick="calcularTotal()">Calcular Total</button>
+    </div>
+
+    <div class="container">
+        <div class="titulo">Total</div>
+        <textarea id="resultado" class="total" readonly></textarea>
+    </div>
+
+    <!-- Botón de copiar total con datos del cliente y productos -->
+    <div class="container">
+        <button onclick="copiarResumen()">Copiar Factura✅</button>
+    </div>
+</div>
+    <script>
+        function copiarTexto(id) {
+            const texto = document.getElementById(id).value;
+            navigator.clipboard.writeText(texto).catch(err => {
+                console.error("Error al copiar: ", err);
+            });
+        }
+
+        function copiarDatosCliente() {
+            const textoCliente = document.getElementById('datosCliente').value;
+            navigator.clipboard.writeText(textoCliente).catch(err => {
+                console.error("Error al copiar: ", err);
+            });
+        }
+
+        // Variables para manejar los productos
+        let productos = [];
+
+        function agregarProducto() {
+            const nombreProducto = document.getElementById('nombreProducto').value;
+            const precioProducto = document.getElementById('precioProducto').value;
+
+            if (nombreProducto && precioProducto) {
+                productos.push({ nombre: nombreProducto, precio: parseFloat(precioProducto) });
+                mostrarProductos();
+                document.getElementById('nombreProducto').value = '';
+                document.getElementById('precioProducto').value = '';
+            } else {
+                alert("Por favor, ingrese tanto el nombre como el precio del producto.");
+            }
+        }
+
+        function mostrarProductos() {
+            const listaProductos = document.getElementById('listaProductos');
+            listaProductos.innerHTML = '';
+            productos.forEach(producto => {
+                const li = document.createElement('li');
+                li.textContent = `${producto.nombre}: $${producto.precio}`;
+                listaProductos.appendChild(li);
+            });
+        }
+
+        function calcularTotal() {
+            const total = productos.reduce((sum, producto) => sum + producto.precio, 0);
+            const resultado = document.getElementById('resultado');
+            const totalConEnvio = total + 8000; // Agregar el costo de envío de 8000
+            resultado.value = `Subtotal: $${total}\nEnvío: $8000\nTotal: $${totalConEnvio}`;
+        }
+
+         function copiarResumen() {
+            const datosCliente = document.getElementById('datosCliente').value;
+            const resumenProductos = productos.map(producto => `${producto.nombre}: $${producto.precio}`).join("\n");
+            const total = productos.reduce((sum, producto) => sum + producto.precio, 0);
+            const totalConEnvio = total + 8000; // Costo de envío
+            const linkChat = document.getElementById('linkChatVendedor').value;
+            const nombreCuenta = document.getElementById('nombreCuenta').value;
+            
+            const resumen = `Datos del Cliente:\n${datosCliente}\n\nProductos:\n${resumenProductos}\n\nSubtotal: $${total}\nEnvío: $8000\nTotal: $${totalConEnvio}\n\nLink del Chat del Vendedor: ${linkChat}\nNombre de la Cuenta: ${nombreCuenta}`;
+
+            navigator.clipboard.writeText(resumen).catch(err => {
+                console.error("Error al copiar resumen: ", err);
+            });
+        }
+        // Código para hacer la caja movible
+const box = document.querySelector('.bienvenida-box');
+let isDragging = false;
+let offsetX, offsetY;
+
+box.addEventListener('mousedown', function(e) {
+    isDragging = true;
+    offsetX = e.clientX - box.offsetLeft;
+    offsetY = e.clientY - box.offsetTop;
+    box.style.cursor = 'grabbing';
+});
+
+document.addEventListener('mousemove', function(e) {
+    if (isDragging) {
+        box.style.left = (e.clientX - offsetX) + 'px';
+        box.style.top = (e.clientY - offsetY) + 'px';
+    }
+});
+
+document.addEventListener('mouseup', function() {
+    isDragging = false;
+    box.style.cursor = 'grab';
+});
+        
+
+    </script>
+</body>
+</html>
